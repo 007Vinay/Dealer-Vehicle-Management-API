@@ -61,8 +61,8 @@ mvn spring-boot:run
 
 5. Postman: Import a collection to test all endpoints quickly.
 
-** API Endpoints **
-Vehicle Controller
+## API Endpoints
+- Vehicle Controller
 | Method | Endpoint                                                | Description                                            |
 | ------ | ------------------------------------------------------- | ------------------------------------------------------ |
 | GET    | /api/vehicles/{id}                                      | Get a vehicle by ID                                    |
@@ -74,7 +74,7 @@ Vehicle Controller
 | GET    | /api/vehicles/premium-dealers                           | List all vehicles belonging to PREMIUM dealers         |
 | GET    | /api/vehicles/by-dealer-subscription/{subscriptionType} | List all vehicles filtered by dealer subscription type |
 
-Dealer Controller
+- Dealer Controller
 | Method | Endpoint                         | Description                                                |
 | ------ | -------------------------------- | ---------------------------------------------------------- |
 | GET    | /api/dealers/{id}                | Get a dealer by ID                                         |
@@ -85,7 +85,7 @@ Dealer Controller
 | GET    | /api/dealers/subscription/{type} | List dealers filtered by subscription type (BASIC/PREMIUM) |
 
 
-Sample Test Data
+- Sample Test Data
 | ID | Name          | Email                                           | Subscription Type |
 | -- | ------------- | ----------------------------------------------- | ----------------- |
 | 1  | ACME Motors   | [acme@example.com](mailto:acme@example.com)     | PREMIUM           |
@@ -126,24 +126,24 @@ Postman: Import a collection to quickly test all CRUD operations, filtering by s
 
 Postman was used to verify:
 
-Creating, reading, updating, deleting dealers
+- Creating, reading, updating, deleting dealers
 
-Creating, reading, updating, deleting vehicles
+- Creating, reading, updating, deleting vehicles
 
-Fetching vehicles by dealer or subscription type
+- Fetching vehicles by dealer or subscription type
 
-Fetching vehicles of PREMIUM dealers
+- Fetching vehicles of PREMIUM dealers
 
 
-**Notes**
+## Notes
 
-Dealer email is unique; validations prevent duplicates.
+- Dealer email is unique; validations prevent duplicates.
 
-Vehicles must belong to an existing dealer.
+- Vehicles must belong to an existing dealer.
 
-PREMIUM dealer vehicles can be queried specifically.
+- PREMIUM dealer vehicles can be queried specifically.
 
-For production, consider adding global exception handling with @ControllerAdvice.
+- For production, consider adding global exception handling with @ControllerAdvice.
 
 
 
