@@ -93,13 +93,6 @@ mvn spring-boot:run
 | 3  | Luxury Wheels | [luxury@example.com](mailto:luxury@example.com) | PREMIUM           |
 
 
-POST Input Example:
-{
-  "name": "ACME Motors",
-  "email": "acme@example.com",
-  "subscriptionType": "PREMIUM"
-}
-
 
 Vehicles
 | ID | Dealer ID | Model          | Price | Status    |
@@ -111,12 +104,6 @@ Vehicles
 | 5  | 3         | BMW X5         | 60000 | AVAILABLE |
 | 6  | 3         | Audi Q7        | 65000 | AVAILABLE |
 
-PUT Input Example:
-{
-  "model": "Toyota Corolla Updated",
-  "price": 15500,
-  "status": "SOLD"
-}
 
 **Swagger / Postman**
 
